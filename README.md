@@ -36,6 +36,14 @@ The model was trained for 50 epochs, with a batch size of 64.
 * Validation accuracy was 0.734
 * Test accuracy was 0.737. From this we can infer that the model generalizes well
 
+## Hyperparemeters tweaks
+
+| Change | Validation Accuracy |
+|----------|:----------:|
+| 32 filters in ResNet block 1 | 0.721|
+| 2 258 dense blocks in the classification layer | 0.715 |
+| 4 projection blocks in ResNet block 1 | 0.730 |
+
 ## Results
 
 Confusion matrix for validation set:
@@ -43,7 +51,3 @@ Confusion matrix for validation set:
 <div align="center">
   <img src="./figs/ConfMatrix.png" style="width: 40%;">
 </div>
-
-
-
-  <!-- <img src="./figs/ConfMatrix.png" style="width: 40%;"> -->
